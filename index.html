@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AVIF to PNG Converter</title>
+    <style>
+        #fileList {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AVIF to PNG Converter</h1>
+    <p>I created this beacuse online file converters werent allowing for more than 10 conversions per day without asking for $9. Feel free to use and share</p>
+    <input type="file" id="files" accept=".avif" multiple>
+    <button onclick="handleFiles()">Select AVIF Files</button>
+    <div id="fileList"></div>
+    <button onclick="convertToPNG()">Convert to PNG</button>
+    <h3>Click on the links to download each images. No bulk download</h3>
+    <div id="downloadLinks"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
